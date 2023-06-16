@@ -2,6 +2,8 @@ apiVersion: operator.open-cluster-management.io/v1
 kind: MultiClusterHub
 metadata:
   name: multiclusterhub
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
   namespace: open-cluster-management
 spec:
   availabilityConfig: "High"
